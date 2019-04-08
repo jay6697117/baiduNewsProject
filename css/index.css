@@ -1,0 +1,171 @@
+/* 容器 */
+.bd-container {
+  width: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  padding-top: 0.4rem;
+  color: #333333;
+  background-color: #ffffff;
+}
+/* 头部样式 */
+.bd-header {
+  font-size: 0.16rem;
+  width: 100%;
+  max-width: 750px;
+  height: 0.4rem;
+  background-color: #3e98ef;
+  /* 伸缩布局 */
+  display: flex;
+  /* 主轴的方向 */
+  flex-direction: row;
+  /* 主轴上子项的对齐方式 */
+  justify-content: space-around;
+  /* 侧轴上子项的对齐方式 */
+  align-items: center;
+  position: fixed;
+  left: 50%;
+  transform: translate(-50%, 0);
+  top: 0;
+  z-index: 999;
+}
+.bd-header > span.active {
+  color: #fff;
+}
+
+/* 轮播图样式 */
+#jdSlider {
+  width: 100%;
+}
+
+#jdSlider .item {
+  width: 100%;
+  /* 当body宽度超过750px固定260px高度，防止图片过宽. 低于750px时高度相当于2.6rem  1rem=calc((100vw / 750) * 100)*/
+  height: calc((100vw / 750) * 260);
+  max-height: 260px;
+}
+
+#jdSlider .item img {
+  width: 100%;
+  height: 100%;
+}
+
+/* 内容样式 */
+.bd-content {
+  padding: 0 0.16rem;
+}
+.bd-content > .cell1,
+.bd-content > .cell2 {
+  padding: 0.13rem 0 0.12rem 0;
+}
+.bd-content > .cell1 {
+  width: 100%;
+  border-bottom: 0.01rem solid #e8e8e8;
+}
+.cell1 > .cell1-top {
+  font-size: 0.18rem;
+  font-weight: normal;
+  max-height: 0.5rem;
+  line-height: 0.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-bottom: 0.04rem;
+}
+.cell1 > .cell1-middle {
+  width: 100%;
+  margin-bottom: 0.08rem;
+  /* 伸缩布局 */
+  display: flex;
+  /* 主轴的方向 */
+  flex-direction: row;
+  /* 主轴上子项的对齐方式 */
+  justify-content: space-between;
+  /* 侧轴上子项的对齐方式 */
+  align-items: stretch;
+}
+.cell1 > .cell1-middle > div {
+  width: calc(33.333333% - 0.666667px);
+}
+.cell1-middle > div > img {
+  width: 100%;
+  /* height: 100%; */
+  height: auto;
+  display: block;
+  /* img垂直居中 */
+  position: relative;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.cell1-bottom {
+  width: 100%;
+  color: #888;
+  max-height: 0.18rem;
+  line-height: 0.18rem;
+  overflow: hidden;
+}
+.cell1-bottom > span:nth-child(1) {
+  margin-right: 0.05rem;
+}
+.bd-content > .cell2 {
+  width: 100%;
+  border-bottom: 0.01rem solid #e8e8e8;
+  /* 伸缩布局 */
+  display: flex;
+  /* 主轴的方向 */
+  flex-direction: row;
+  /* 主轴上子项的对齐方式 */
+  justify-content: space-between;
+  /* 侧轴上子项的对齐方式 */
+  align-items: stretch;
+}
+.bd-content > .cell2 > .cell2-left {
+  width: calc(33.333333% - 0.666667px);
+  min-width: calc(33.333333% - 0.666667px);
+}
+.cell2 > .cell2-left > img {
+  width: 100%;
+  /* height: 100%; */
+  height: auto;
+  display: block;
+  /* img垂直居中 */
+  position: relative;
+  left: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.bd-content > .cell2 > .cell2-right {
+  flex: 1;
+  padding-left: 0.14rem;
+  /* 伸缩布局 */
+  display: flex;
+  /* 主轴的方向 */
+  flex-direction: column;
+  /* 主轴对齐方式 */
+  justify-content: center;
+  /* 侧轴对齐方式 */
+  align-items: stretch;
+}
+.cell2 > .cell2-right > p:nth-child(1) {
+  font-size: 0.18rem;
+  font-weight: normal;
+  max-height: 0.5rem;
+  line-height: 0.25rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  margin-bottom: 0.08rem;
+}
+.cell2 > .cell2-right > p:nth-child(2) {
+  color: #888;
+  max-height: 0.18rem;
+  line-height: 0.18rem;
+  overflow: hidden;
+}
+.cell2 > .cell2-right > p:nth-child(2) > span:nth-child(1) {
+  margin-right: 0.05rem;
+}

@@ -1,1 +1,1 @@
-# baiduNewsProject
+# 百度新闻手机端项目

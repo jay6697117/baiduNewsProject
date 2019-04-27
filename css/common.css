@@ -19,7 +19,6 @@ body {
   font-size: 0.13rem;
   font-family: Arial, Helvetica, sans-serif;
   color: #000000;
-  /* 浏览器的机制: 浏览器会先找html有没有背景色，如果没有则往下查找body的，如果body有则取它来做底板的颜色;
-     所以这里设置的背景颜色其实是html的背景色,无论body宽度高度设置为多少都无法改变该背景色的范围 */
+  /* 当html标签无背景样式时，body的背景色其实不是body标签的背景色，而是浏览器的。一旦html标签含有背景色，则body的背景色变成了正常的body标签自己的背景色，而此时的html标签最顶级，背景色被浏览器获取，成为浏览器的背景色。 */
   background-color: #f1f1f1;
 }

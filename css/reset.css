@@ -84,14 +84,6 @@ textarea {
   padding: 0;
 }
 
-html,
-body {
-  width: 100%;
-  /* transparent是透明的意思，background-color:transparent，就是把背景色设置为透明；默认情况下只要不设置背景颜色
-（或者背景图片），背景就是透明的；可以不用设置；*/
-  background-color: transparent;
-}
-
 /* 标题h1~h6样式重置 */
 h1,
 h2,
